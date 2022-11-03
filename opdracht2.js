@@ -88,7 +88,7 @@ for (let i = 0; i < inventory.length; i++) {
     counterBoughtTvsForLoop = counterBoughtTvsForLoop + inventory[i].originalStock;
 }
 
-console.log(counterBoughtTvsForLoop)
+console.log(counterBoughtTvsForLoop);
 
 
 // methode 2: methode met .reduce:
@@ -116,12 +116,12 @@ console.log(counterBoughtTvsReduceMethode);
 // 6. schrijf de return: return sumBoughtTvs;
 // 7. console.log de functie: functionBoughtTvs ()
 
-function functionBoughtTvs() {
+function boughtTvsA() {
     let sumBoughtTvs = inventory.reduce((previousValue, currentValue) => previousValue + currentValue.originalStock, 0);
     return sumBoughtTvs;
 }
 
-console.log(functionBoughtTvs());
+console.log(boughtTvsA());
 
 
 // methode 4: functie die gebruik maakt van een argument om door de parameter te mappen.
@@ -160,5 +160,25 @@ amountBoughtTv.textContent = counterBoughtTvsReduceMethode
 
 //Opdracht 2e:** Geef _in het rood_ weer hoeveel tv's er nog verkocht moeten worden.
 
+let stockTv = boughtTvsA() - sumSoldTv()
+console.log(stockTv);
+
+let amountStockTvs = document.getElementById("stockTvsRedText")
+amountStockTvs.textContent = stockTv
+
+
+//geeft NAN
+/*function stockTv (boughtTvsA,sumSoldTv) {
+    return boughtTvsA - sumSoldTv
+}
+
+console.log(stockTv());*/
+
+/*function stockTv (boughtTvsA, sumSoldTv){
+    let functionResult = boughtTvsA () - sumSoldTv ()
+}
+
+console.log(stockTv());
+stockTv();*/
 
 //Einde opdracht 2----------------------
