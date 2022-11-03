@@ -1,4 +1,5 @@
 //Opdracht 3 - Array methoden en functies
+//Deze opdracht is af
 
 //Opdracht 3a:** Gebruik een array-methode om alle tv-merken (zoals `Philips`, `NIKKEI`, etc.) in een lijst op de
 //pagina weer te geven. Zorg ervoor dat dit ook zou werken als we 200 tv's in onze array zouden hebben staan. Dat er
@@ -47,3 +48,4 @@ function tvBrandsList (array) {
 const output = tvBrandsList(inventory);
 console.log(output);
 
+//-----------------------
