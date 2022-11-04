@@ -1,4 +1,3 @@
-//Deze opdracht is af
 // VOORRAAD ARRAY MET TV'S
 const inventory = [
     {
@@ -168,6 +167,15 @@ const inventory = [
 //Opdracht 1a:** Gebruik een array-methode om een array te maken met alle tv-type namen. Log de uitkomst in de
 //console.
 
+// 1. Je wil een aanpassing over de hele array, daarvoor gebruik je de map () methode;
+// 2. De map () methode heeft altijd een callback functie die je moet vullen;
+// 3. De callback is een function die wordt gebruikt als argument binnen een andere functie;
+// 4. Syntax map () methode: naamVariabel.map((callback) => {};
+// 5. maak een variabelnaam aan, om de waarde in op te slaan;
+// 6. roep de inventory-array aan en koppel daar de map () methode aan;
+// 7. return het type tv;
+// 8. Console log de variabel waarin je de waarde hebt opgeslagen;
+
 const typenameTv = inventory.map((array) => {
     return array.type;
 });
@@ -176,6 +184,15 @@ console.log(typenameTv);
 
 //Opdracht 1b:** Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die volledig uitverkocht
 //zijn. Log de uitkomst in de console.
+
+// 1. Je wil alle entry's ontvangen die voldoen aan de eis van 'volledig uitverkocht', daarvoor gebruik je de filter() methode;
+// 2. De filter() methode heeft altijd een callback functie die je moet vullen;
+// 3. De callback is een function die wordt gebruikt als argument binnen een andere functie;
+// 4. Syntax filter () methode: naamVariabel.filter((callback) => {};
+// 5. maak een variabelnaam aan, om de waarde in op te slaan;
+// 6. roep de inventory-array aan en koppel daar de filter () methode aan;
+// 7. return: originalstock - sold === 0;
+// 8. Console log de variabel waarin je de waarde hebt opgeslagen;
 
 const soldOutTv = inventory.filter((array) => {
     return (array.originalStock - array.sold) === 0
@@ -186,6 +203,16 @@ console.log(soldOutTv);
 //Opdracht 1c:** Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die over AmbiLight
 //beschikken. Log de uitkomst in de console.
 
+// 1. Je wil alle entry's ontvangen die voldoen aan de eis van de optie 'ambilight', daarvoor gebruik je de filter() methode;
+// 2. De filter() methode heeft altijd een callback functie die je moet vullen;
+// 3. De callback is een function die wordt gebruikt als argument binnen een andere functie;
+// 4. Syntax filter () methode: naamVariabel.filter((callback) => {};
+// 5. maak een variabelnaam aan, om de waarde in op te slaan;
+// 6. roep de inventory-array aan en koppel daar de filter () methode aan;
+// 7. ambiLight zit binnen options, je zult dus de de callback.option.ambiLight moeten loggen om erbij te kunnen;
+// 8. Return het ambilight;
+// 9. Console log de variabel waarin je de waarde hebt opgeslagen;
+
 const ambiLightTv = inventory.filter((array) => {
     return array.options.ambiLight
 });
@@ -194,6 +221,15 @@ console.log(ambiLightTv);
 
 //Opdracht 1d:** Schrijf een functie die alle tv's van laagste naar hoogste prijs sorteert. Log de uitkomst in de
 //console.
+
+// 1. Je wil de array van laag naar hoog sorteren, daarvoor gebruik je de sort () methode;
+// 2. De filter() methode heeft altijd een callback functie die je moet vullen, gebruik de variabelen a en b;
+// 3. De callback is een function die wordt gebruikt als argument binnen een andere functie;
+// 4. Syntax filter () methode: naamVariabel.sort(a, b) => {};
+// 5. maak een variabelnaam aan, om de waarde in op te slaan;
+// 6. roep de inventory-array aan en koppel daar de sort() methode aan;
+// 7. return: de prijs van tv-a - de prijs van tv-b, dan gebruikt het systeem -1,0,1 om de volgorde te bepalen;
+// 8. Console log de variabel waarin je de waarde hebt opgeslagen;
 
 const sortPriceTv = inventory.sort((a, b) => {
     return a.price - b.price;
