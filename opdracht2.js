@@ -61,7 +61,6 @@ function sumSoldTv2() {
 
 console.log(sumSoldTv2());
 
-
 //2a methode 4: functie die gebruik maakt van een argument om door de parameter te mappen. Als je een parameter aanmaakt, kun je met die parameter gaan werken.
 // [callback is een functie die als argument wordt doorgegeven binnen in een andere functie]
 //1. je wil tellen hoeveel tv's er zijn verkocht.
@@ -71,26 +70,26 @@ console.log(sumSoldTv2());
 //5. return de aanpasbare variabel waarin sum wordt opgeslagen;
 //6. console.log de functie(), en vul binnen de () hetgeen je wil invoeren als argument, om dit binnen de functie te kunnen doorlopen.
 
-function sumSoldTvsWithArgument(array) {
+/*function sumSoldTvsWithArgument(array) {
     let soldTvCounter = 0;
 
     for (let i = 0; i < array.length; i++) {
-        soldTvCounter = soldTvCounter + array;
+        soldTvCounter = soldTvCounter + array[i];
     }
 }
 
-const sumSoldTvsOne = inventory.sold;
-console.log(sumSoldTv2());
+const sumSoldTvsOne = sumSoldTvsWithArgument(inventory.sold);
+console.log();*/
 
 //Vraag: in function sumSoldTvMetParameter logt de functie undifined, ik zie niet wat ik verkeerd doe. Weet jij wat er misgaat?
 
 /*function sumSoldTvMetParameter(array) {
+const totalSumSoldTv = array.reduce
     return array.reduce((previousValue, currentValue) => previousValue + currentValue, 0);
 }
 
 const totalSoldTvsTwo = inventory.sold;
-console.log(totalSoldTvsTwo); //logt undifined, weet niet waarom*/
-
+console.log(totalSoldTvsTwo); //logt undefined, ik weet niet waarom*/
 
 //Opdracht 2b:** Zorg ervoor dat dit aantal _in het groen_ wordt weergegeven op de pagina.
 // 1. schrijf binnen <p> ... </p>: aantal verkochte tv's;

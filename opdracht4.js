@@ -10,6 +10,20 @@
 //
 //     * **Opdracht 4a:** Maak een herbruikbare functie die een string genereert voor de naam van één tv en deze teruggeeft in het format `[merk] [type] - [naam]` zoals `Philips 43PUS6504/12 - 4K TV` of `NIKKEI NH3216SMART - HD smart TV`.
 //
+
+//1. functie schrijven die merk + type + naam returned, en buiten de scope de variabel waarin het is opgeslagen returned.
+
+function tvFullName () {
+    const fullName = inventory.map((inventory) => {
+        return inventory.brand + " " + inventory.type + " " + inventory.name;
+    });
+    return fullName
+}
+
+console.log(tvFullName());
+
+
+
 // * **Opdracht 4b:** Maak een herbruikbare functie die de prijs van één tv als parameter verwacht (zoals `379` of `159`) teruggeeft in het format `€379,-` of `€159,-`.
 //
 // * **Opdracht 4c:** Maak een herbruikbare functie die een string genereert voor alle beschikbare schermgroottes van één tv. De functie geeft dit terug in het format `[schermgrootte] inches ([schermgrootte omgerekend]cm) | [schermgrootte] inches ([schermgrootte omgerekend]cm)`
