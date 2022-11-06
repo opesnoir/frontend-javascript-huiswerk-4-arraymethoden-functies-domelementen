@@ -25,6 +25,7 @@ console.log(tvBrands);
 // manier 2 een functie waarbij je door de originele array mapt (3b1);
 // hier gebruik je een functie om in principe hetzelfde te doen als in manier 1;
 // je mapt nog steeds door de originele array heen.
+
 function listTvBrands() {
     const tvBrands = inventory.map((array) => {
         return array.brand;

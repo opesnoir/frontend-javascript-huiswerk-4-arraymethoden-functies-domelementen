@@ -23,13 +23,75 @@ function tvFullName () {
 console.log(tvFullName());
 
 
-
 // * **Opdracht 4b:** Maak een herbruikbare functie die de prijs van één tv als parameter verwacht (zoals `379` of `159`) teruggeeft in het format `€379,-` of `€159,-`.
 //
+//1. je wil een array aanpassen, met een functie, van een getal naar een prijs;
+//2. aanpasbare variabel toewijzen die dient als variabel waarmee de objectwaarde wordt aangesproken;
+//3. return de huidige waarde met een euro teken en een ",-";
+//4. console.log de counter ter controle.
+
+function priceFormat () {
+    const formattedPrice = inventory.map((inventory) => {
+        return "€"+inventory.price+",-";
+    });
+    return formattedPrice
+}
+
+console.log(priceFormat());
+
+
 // * **Opdracht 4c:** Maak een herbruikbare functie die een string genereert voor alle beschikbare schermgroottes van één tv. De functie geeft dit terug in het format `[schermgrootte] inches ([schermgrootte omgerekend]cm) | [schermgrootte] inches ([schermgrootte omgerekend]cm)`
 // etc. Als een tv maar één schermgrootte heeft (`[32]`) wordt de output `32 inch (81 cm)`. Wanneer een tv vier
 // schermgroottes heeft (`[43, 50, 55, 58]`) wordt de output `43 inch (109 cm) | 50 inch (127 cm) | 58 inch (147 cm)`. _Let op:_ om één string te genereren uit een array van schermgroottes zul je een for-loop voor moeten gebruiken.
 //
+//1. return de huidige waarde met: schermgrootte + "inches" etc.;
+//2. inch-waarde * 2,45 = cm-waarde;
+//3. de functie die de waarde van inch naar cm omrekent;
+//4. de array binnen availableSizes aanspreken;
+
+//Ik heb oprecht geen idee hoe dit op te lossen.
+/*const inchToCm = inventory.map((array) => {
+    return array.availableSizes * 2.45;
+});
+
+console.log(inchToCm);*/
+
+/*function listTvBrands() {
+    const tvBrands = inventory.map((array) => {
+        return array.brand;
+    });
+    return tvBrands
+}
+
+console.log(listTvBrands());*/
+
+/*function inchToCm() {
+    const inches = 0;
+    for (let i = 0; i <inventory.length; i++);
+
+    const inchToCms = inventory.map((array) => {
+        const cmOutcome = (inventory.availableSizes[i] * 2.45) + "cm"
+        return inches;
+        return cmOutcome;
+
+    });
+    return inchToCm()
+}
+
+console.log(inchToCm());*/
+
+/*function inchToCm () {
+    const fromInchToCm = inventory.map((inventory) => {
+        return inventory.availableSizes * 2.45;
+    });
+    return fromInchToCm
+}
+
+console.log(inchToCm());*/
+
+
+
+
 // * **Opdracht 4d:** Schrijf een script die de informatie van de Philips 43PUS6504/12 tv weergeeft op de pagina zoals onderstaand voorbeeld. Gebruik de functies die je hebt gemaakt in opdracht 4a, 4b en 4c.
 //
 //     ```
