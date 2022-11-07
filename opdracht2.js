@@ -70,26 +70,22 @@ console.log(sumSoldTv2());
 //5. return de aanpasbare variabel waarin sum wordt opgeslagen;
 //6. console.log de functie(), en vul binnen de () hetgeen je wil invoeren als argument, om dit binnen de functie te kunnen doorlopen.
 
-/*function sumSoldTvsWithArgument(array) {
+function sumSoldTvsWithArgument(array) {
     let soldTvCounter = 0;
 
     for (let i = 0; i < array.length; i++) {
-        soldTvCounter = soldTvCounter + array[i];
+        soldTvCounter = soldTvCounter + array[i].sold;
+//        console.log(array[i].sold)
     }
+    return soldTvCounter;
 }
 
-const sumSoldTvsOne = sumSoldTvsWithArgument(inventory.sold);
-console.log();*/
+const sumSoldTvsOne = sumSoldTvsWithArgument(inventory);
+console.log(sumSoldTvsOne);
 
 //Vraag: in function sumSoldTvMetParameter logt de functie undifined, ik zie niet wat ik verkeerd doe. Weet jij wat er misgaat?
+//Antwoord van Sam: array plek definieer je met "[]" en het object met een ".", dus array[i].sold zegt in de array index .sold.
 
-/*function sumSoldTvMetParameter(array) {
-const totalSumSoldTv = array.reduce
-    return array.reduce((previousValue, currentValue) => previousValue + currentValue, 0);
-}
-
-const totalSoldTvsTwo = inventory.sold;
-console.log(totalSoldTvsTwo); //logt undefined, ik weet niet waarom*/
 
 //Opdracht 2b:** Zorg ervoor dat dit aantal _in het groen_ wordt weergegeven op de pagina.
 // 1. schrijf binnen <p> ... </p>: aantal verkochte tv's;

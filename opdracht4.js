@@ -49,6 +49,41 @@ console.log(priceFormat());
 //3. de functie die de waarde van inch naar cm omrekent;
 //4. de array binnen availableSizes aanspreken;
 
+// je zegt in essentie: ik heb een array en die wil ik aanpassen. Maar deze array zit in een array, dus je zult hem moeten aanroepen.
+//Verder wil je over de lengte van de originele array en over de lengte van de array die je wil aanpassen.
+/*algemene for loop*/
+
+
+for (let i = 0; i <inventory.length; i++){
+    console.log(inventory[i].availableSizes)
+   // const inchToCm = (inventory.availableSizes * 2.45);
+}
+
+console.log(inventory[0].availableSizes);
+
+
+
+/*wat ik wil doen:*/
+
+/*
+let availableSizes = inventory.availableSizes
+
+for (let i = 0; i <inventory.length; i++){
+    const inchToCm = (availableSizes * 2.45);
+}
+
+console.log(inventory);
+*/
+
+/*
+const inchToCm = inventory.map((array) => {
+    return array.availableSizes * 2.45;
+});
+
+console.log(inchToCm);
+*/
+
+
 //Ik heb oprecht geen idee hoe dit op te lossen.
 /*const inchToCm = inventory.map((array) => {
     return array.availableSizes * 2.45;
