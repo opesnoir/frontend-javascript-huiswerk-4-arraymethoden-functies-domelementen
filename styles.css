@@ -1,0 +1,13 @@
+/* Schrijf voor alle onderstaande opdrachten eerst **stap voor stap de psuedo-code uit */
+
+#soldTvsGreenText {
+    color: green;
+}
+
+#boughtTvsBlueText {
+    color: blue;
+}
+
+#stockTvsRedText {
+    color: red;
+}
