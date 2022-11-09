@@ -15,7 +15,7 @@
 
 function tvFullName () {
     const fullName = inventory.map((inventory) => {
-        return inventory.brand + " " + inventory.type + " " + inventory.name;
+        return `${inventory.brand} ${inventory.type} ${inventory.name}`;
     });
     return fullName
 }
